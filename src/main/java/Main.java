@@ -1,41 +1,17 @@
-import Array.MyArray;
-import Stack.MyStack;
+import ADT.MyStack;
+import examples.Reverser;
 
 public class Main {
 
 
     public static void main(String[] args) {
 
-        MyStack newStack = new MyStack(10);
+        Reverser reverser = new Reverser("reverse");
 
-        newStack.push(5);
-        newStack.push(7);
-        newStack.push(9);
-        newStack.push(2);
-        newStack.push(3);
-
-        int poppedVal = newStack.pop();
-
-        System.out.println(poppedVal);
-        poppedVal = newStack.pop();
-        System.out.println(poppedVal);
-        poppedVal = newStack.pop();
-        System.out.println(poppedVal);
-        poppedVal = newStack.pop();
-        System.out.println(poppedVal);
-        poppedVal = newStack.pop();
-        System.out.println(poppedVal);
-        poppedVal = newStack.pop();
-        System.out.println(poppedVal);
-        poppedVal = newStack.pop();
-        System.out.println(poppedVal);
-        poppedVal = newStack.pop();
-        System.out.println(poppedVal);
+        String result =reverser.doRev();
 
 
-
-
-
+        System.out.println(result);
 
     }
 }
