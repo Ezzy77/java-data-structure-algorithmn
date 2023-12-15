@@ -1,4 +1,6 @@
 import ADT.MyStack;
+import List.Link;
+import List.LinkedList;
 import examples.Reverser;
 
 public class Main {
@@ -6,12 +8,20 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Reverser reverser = new Reverser("reverse");
+        LinkedList list = new LinkedList();
 
-        String result =reverser.doRev();
+        list.insertFirst(4);
+        list.insertFirst(7);
+        list.insertFirst(9);
+
+        list.displayList();
+
+        list.deleteFirst();
+        list.deleteFirst();
+
+        list.displayList();
 
 
-        System.out.println(result);
 
     }
 }
